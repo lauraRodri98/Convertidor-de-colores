@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="header__title">Conversión de Colores</h1>
+        <p>Convierte colores entre HEX, RGB y HSL de forma rápida y sencilla</p>
+        <section class="header__section__button">
+            <a class="button button__GitHub" href="http://">Go to GitHub <i style="font-size: 20px;" class="fa-brands fa-github-alt""></i>
+            </a>
+        </section>
+    </header>
+
+    <main>
+        <section class="section__card--primary">
+            <form class="section__form" action="">
+                <div class="form__input">
+                    <p class="section__card__text">HEX</p>
+                    <input class="section__form__input" type="text" name="" id="input__hex">    
+                    <button><i class="fa-solid fa-copy"></i></button>
+                </div>
+                <div class="form__input">
+                    <p class="section__card__text">RGB</p>
+                    <input class="section__form__input" type="text" id="input__rgb">
+                    <button><i class="fa-solid fa-copy"></i></button>
+                </div>
+                <div class="form__input">
+                    <p class="section__card__text">HSL</p>
+                    <input class="section__form__input" type="text" name="" id="input__hsl">
+                    <button><i class="fa-solid fa-copy"></i></button>
+                </div>
+            </form>
+        </section>
+        
+        <section class="section">
+            <div class="section__card--background div--background"></div>
+            <div class="section__card--background div--background"></div>
+            <div class="section__card--background div--background"></div>
+        </section>
+        
+        <section class="section__copy">
+            <div class="section__copy--text">
+                <p>Hex</p>
+                <p class="section__copy--hex" id="hex">Ejemplo</p>
+            </div>
+            <div class="section__copy--text">
+                <p>RGB</p>
+                <p class="section__copy--hex" id="rgb"></p>
+            </div>
+            <div class="section__copy--text">
+                <p>HSL</p>
+                <p class="section__copy--hex" id="hsl"></p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <section class="footer-section">
+            <a class="footer-section-a" href="https://github.com/lauraRodri98"><i class="fa-brands fa-github"></i></a>
+            <a class="footer-section-a" href="https://www.linkedin.com/in/laura-rodriguez-perales-315753154/"><i class="fa-brands fa-linkedin"></i></a>
+        </section>
+        <section class="footer-section--phrasel">
+            <h5 class="footer-section--title">"¿Sabías que no puedes ver el color magenta?"</h5>
+            <p class="footer-section--text">El magenta no existe en el espectro de luz visible. Nuestro cerebro lo inventa cuando recibe señales de rojo y azul sin verde de por medio. Es un color "falso", creado por nuestra percepción, pero que en realidad no tiene una longitud de onda propia. ¡Tu pantalla y tu cerebro hacen magia para que lo veas!</p>
+        </section>
+        <section class="footer__section--copyright">
+            <p>&#169; 2025. Todos los derechos reservados. <a class="gooter__section--correo" href="mailto:laura.rodriguezperales98@gmail.com?subject=Solicitud%20de%20contacto">Laura Rodríguez</a>
+            </p>
+        </section>
+    </footer>
+</body>
+</html>
