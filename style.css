@@ -8,7 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-    row-gap: 90px;
+    row-gap: 50px;
     padding: 20px;
     font-family: "Poppins", sans-serif;
 }
@@ -86,7 +86,9 @@ main {
 .section__form__input:focus {
     outline: 1px solid rgb(79, 79, 79);
     color: white;
+    padding: 0;
 }
+
 
 .section {
     display: grid;
@@ -97,17 +99,46 @@ main {
 .section__card--background {
     cursor: pointer;
     display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .div--background {
-    background: cyan;
     height: 250px;
     border-radius: 10px;
-    transition: all 25ms;
+    transition: all 300ms;
+    position: relative;
+    cursor: pointer;
 }
 
-.div--background:hover {
-    opacity: 0.85;
+.section__text--label{
+    position: absolute;
+    top: 0;
+    margin: 5px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    background: #00050fda;
+    color: aliceblue;
+}
+
+.icon-copy {
+    color: white;
+    font-size: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in-out, visibility 300ms;
+}
+
+.div--background:hover .icon-copy {
+    opacity: 1;
+    visibility: visible;
 }
 
 .section__copy {
@@ -118,14 +149,19 @@ main {
 
 .section__copy--text {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 50px 1fr;
     background: #001748;
-    padding: 10px 40px;
+    padding: 10px 20px;
     border-radius: 10px;
+    justify-content: center;
+    color: #bcbcbc;
 }
 
 .section__copy--hex {
-    color: #88aaf2;
+    color: #bcbcbc;
+    width: 100px;
+    text-align: center;
+    width: 100%;
 }
 
 footer {
@@ -164,7 +200,7 @@ footer {
 }
 
 .footer__section--copyright p {
-    margin-top: 40px;
+    margin-top: 10px;
     font-size: 12px;
     text-align: center;
     color: #bababa;
@@ -173,3 +209,28 @@ footer {
 .footer__section--correo {
     color: rgb(104, 182, 211);
 }
+
+
+
+
+/* a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #007bff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+} */
