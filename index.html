@@ -13,14 +13,30 @@
 </head>
 <body>
     <header>
-        <h1 class="header__title">
-            <span class="material-symbols-outlined">planet</span>
-            Conversión de Colores</h1>
-        <p>Convierte colores entre HEX, RGB y HSL de forma rápida y sencilla</p>
-        <section class="header__section__button">
-            <a class="button button__GitHub" target="_blank" href="https://github.com/lauraRodri98/Convertidor-de-colores">Go to GitHub <i style="font-size: 20px;" class="fa-brands fa-github-alt""></i>
-            </a>
+        <section class="section__languajes">
+            <button class="section__button--languajes" id="button--spanish">
+                <img src="/public/english.png" alt="english.png">
+            </button>
+            <button class="section__button--languajes" id="button--english">
+                <img src="/public/spanish.png" alt="spanish.png">
+            </button>
         </section>
+
+        <h1 class="header__title" id="title-spanish">
+            <span class="material-symbols-outlined">planet</span>
+            Conversión de Colores
+        </h1>
+        <h1 class="header__title" id="title-english">
+            <span class="material-symbols-outlined">planet</span>
+            Colour Conversion
+        </h1>
+        <p id="sub-spanish">Convierte colores entre HEX, RGB y HSL de forma rápida y sencilla</p>
+        <p id="sub-english">Convert colors between HEX, RGB and HSL quickly and easily</p>
+        <section class="header__section__button">
+            <a id="button__git--spanish" class="button button__GitHub" target="_blank" href="https://github.com/lauraRodri98/Convertidor-de-colores">Ir a GitHub <i style="font-size: 20px;" class="fa-brands fa-github-alt""></i></a>
+            <a id="button__git--english" class="button button__GitHub" target="_blank" href="https://github.com/lauraRodri98/Convertidor-de-colores">Go to GitHub <i style="font-size: 20px;" class="fa-brands fa-github-alt""></i></a>
+        </section>
+
     </header>
 
     <main>
@@ -74,18 +90,21 @@
     
     <footer>
         <section class="footer-section--phrasel">
-            <h5 class="footer-section--title">"¿Sabías que no puedes ver el color magenta?"</h5>
-            <p class="footer-section--text">El magenta no existe en el espectro de luz visible. Nuestro cerebro lo inventa cuando recibe señales de rojo y azul sin verde de por medio. Es un color "falso", creado por nuestra percepción, pero que en realidad no tiene una longitud de onda propia. ¡Tu pantalla y tu cerebro hacen magia para que lo veas!</p>
+            <h5 id="title-text-spanish" class="footer-section--title">"¿Sabías que no puedes ver el color magenta?"</h5>
+            <h5 id="title-text-english" class="footer-section--title">"Did you know that you can't actually see the color magenta?"</h5>
+            <p  id="text-english" class="footer-section--text">Magenta does not exist in the visible light spectrum. Our brain invents it when it receives signals of red and blue without green in between. It is a "false" color, created by our perception, but it doesn't actually have its own wavelength. Your screen and your brain work together like magic to make you see it!            </p>
+            <p  id="text-spanish" class="footer-section--text">El magenta no existe en el espectro de luz visible. Nuestro cerebro lo inventa cuando recibe señales de rojo y azul sin verde de por medio. Es un color "falso", creado por nuestra percepción, pero que en realidad no tiene una longitud de onda propia. ¡Tu pantalla y tu cerebro hacen magia para que lo veas!</p>
         </section>
         <section class="footer-section">
             <a class="footer-section-a" href="https://github.com/lauraRodri98"><i class="fa-brands fa-github"></i></a>
             <a class="footer-section-a" href="https://www.linkedin.com/in/laura-rodriguez-perales-315753154/"><i class="fa-brands fa-linkedin"></i></a>
         </section>
         <section class="footer__section--copyright">
-            <p>&#169; 2025. Todos los derechos reservados. <a class="gooter__section--correo" href="mailto:laura.rodriguezperales98@gmail.com?subject=Solicitud%20de%20contacto">Laura Rodríguez</a>
-            </p>
+            <p id="copy-right-spanish">&#169; 2025. Todos los derechos reservados. <a class="gooter__section--correo" href="mailto:laura.rodriguezperales98@gmail.com?subject=Solicitud%20de%20contacto">Laura Rodríguez</a></p>
+            <p id="copy-right-english">&#169; 2025. All rights reserved. <a class="gooter__section--correo" href="mailto:laura.rodriguezperales98@gmail.com?subject=Solicitud%20de%20contacto">Laura Rodríguez</a></p>
         </section>
     </footer>
     <script src="script.js"></script>
+    <script src="languajes.js"></script>
 </body>
 </html>

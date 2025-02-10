@@ -2,7 +2,6 @@
 
 let colorCian = '#00ddff';
 
-// Referencias a los elementos
 let value_background_hex = document.getElementById('div--background--hex');
 let value_background_rgb = document.getElementById('div--background--rgb');
 let value_background_hsl = document.getElementById('div--background--hsl');
@@ -38,7 +37,7 @@ input_rgb.addEventListener('input', function () {
     actualizarColores(hex);
 });
 
-// Escuchar cambios en HSL
+
 input_hsl.addEventListener('input', function () {
     let value = this.value.trim();
     if (!/^hsl\(\d{1,3},\s*\d{1,3}%,\s*\d{1,3}%\)$/.test(value)) {
@@ -49,7 +48,7 @@ input_hsl.addEventListener('input', function () {
     actualizarColores(hex);
 });
 
-// Función para actualizar colores y valores de los inputs
+
 function actualizarColores(hex) {
     let rgb = hexToRGB(hex);
     let hsl = hexToHSL(hex);
@@ -62,8 +61,6 @@ function actualizarColores(hex) {
     mostrar_rgb.innerHTML = rgb;
     mostrar_hsl.innerHTML = hsl;
 }
-
-// Función para convertir HEX a RGB
 function hexToRGB(hex) {
     hex = hex.replace(/^#/, '');
     let r = parseInt(hex.substring(0, 2), 16);
@@ -100,7 +97,6 @@ function hexToHSL(hex) {
                 h = (r - g) / d + 4;
                 break;
         }
-
         h = Math.round(h * 60);
     }
 
@@ -110,13 +106,11 @@ function hexToHSL(hex) {
     return `${h}, ${s}%, ${l}%`;
 }
 
-// Función para convertir RGB a HEX
 function rgbToHex(rgb) {
     let values = rgb.match(/\d+/g).map(Number);
     return `#${values.map(v => v.toString(16).padStart(2, '0')).join('')}`;
 }
 
-// Función para convertir HSL a HEX
 function hslToHex(hsl) {
     let values = hsl.match(/\d+/g).map(Number);
     let h = values[0] / 360;
@@ -141,7 +135,7 @@ function hslToHex(hsl) {
     return `#${[r, g, b].map(v => Math.round(v * 255).toString(16).padStart(2, '0')).join('')}`;
 }
 
-// Copiar valores al hacer click
+
 function copiarTexto(valor) {
     navigator.clipboard.writeText(valor)
         .then(() => alert("Copiado"))
