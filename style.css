@@ -90,7 +90,7 @@ p {
 
 .header__title {
     font-size: 40px;
-    margin: 10px 0px;
+    margin: 20px 0px;
 }
 
 .button__GitHub {
@@ -147,7 +147,6 @@ main {
     outline: 1px solid rgb(79, 79, 79);
     color: white;
 }
-
 
 .section {
     display: grid;
@@ -268,28 +267,38 @@ footer {
 .footer__section--correo {
     color: rgb(104, 182, 211);
 }
+.section__languajes{margin: 0px;}
 
 
-
-
-/* a {
-    text-decoration: none;
-    color: #333;
-    position: relative;
+@media (max-width: 727px) {
+    .section{grid-template-columns: repeat(3, 1fr);}
+    .div--background{height: 180px;}
 }
 
-a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    height: 2px;
-    background: #007bff;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
+@media (max-width: 500px) {
+    .header__title{margin-top: 40px;}
+    .header__title{font-size: 30px;}
+    header p {font-size: 14px;}
+    .header__section__button{font-size: 14px;}
+    .button__GitHub{padding: 8px 20px;}
+    .section__form {grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));}
+    .section__card__text, .section__form__input {font-size: 12px;}
+    .section__form__input{padding: 5px; height: 25px;}
+    .section__form{background: transparent;}
+    .form__input{background: #001748; margin: 9px; border-radius: 10px;}
+    .section__text--label{font-size: 12px; border-radius: 5px;}
+    .div--background{height: 140px;}
+    .section__copy--text p{font-size: 12px;}
+    .section__copy {grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));}
+    .footer-section--phrasel h5, .footer-section--phrasel p{font-size: 11px;}
 }
 
-a:hover::after {
-    transform: scaleX(1);
-} */
+@media (max-width: 400px) {
+    .section{grid-template-rows: repeat(3, 1fr);grid-template-columns: 1fr;}
+    .div--background{height: 100px;}
+    .icon-copy{padding: 20px;}
+    .section__copy--text p{font-size: 12px;}
+
+
+    
+}
