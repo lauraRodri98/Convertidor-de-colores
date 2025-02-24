@@ -8,7 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-    row-gap: 50px;
+    row-gap: 100px;
     padding: 20px;
     font-family: "Poppins", sans-serif;
 }
@@ -17,11 +17,13 @@ header {
     display: grid;
     justify-content: center;
     text-align: center;
+    margin-top: 0px;
+    margin-top: 35px;
 }
 
 .section__languajes{
     position: absolute;
-    top: 0;
+    top: 20;
     right: 50px;
     margin: 10px;
 }
@@ -267,9 +269,13 @@ footer {
 .footer__section--correo {
     color: rgb(104, 182, 211);
 }
+
 .section__languajes{margin: 0px;}
 
-
+@media (max-width:907px) {
+    .section__languajes{top: 0;}
+    
+}
 @media (max-width: 727px) {
     .section{grid-template-columns: repeat(3, 1fr);}
     .div--background{height: 180px;}
@@ -298,7 +304,4 @@ footer {
     .div--background{height: 100px;}
     .icon-copy{padding: 20px;}
     .section__copy--text p{font-size: 12px;}
-
-
-    
 }
